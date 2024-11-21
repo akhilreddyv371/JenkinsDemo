@@ -37,5 +37,12 @@ pipeline{
         }
       }
     }
+    stage("end"){
+      steps{
+        script{
+          end()
+        }
+      }
+    }
   }
 }
