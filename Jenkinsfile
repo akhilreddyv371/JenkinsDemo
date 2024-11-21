@@ -1,0 +1,31 @@
+@Library("AutomateSharedLibrary") _
+pipeline{
+  agent any
+  stages{
+    stage("hello"){
+      steps{
+        hello()
+      }
+    }
+     stage("develop"){
+      steps{
+        develop()
+      }
+    }
+     stage("build"){
+      steps{
+        build()
+      }
+    }
+     stage("test"){
+      steps{
+        test()
+      }
+    }
+     stage("deploy"){
+      steps{
+        deploy()
+      }
+    }
+  }
+}
