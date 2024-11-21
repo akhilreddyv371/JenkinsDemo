@@ -4,27 +4,37 @@ pipeline{
   stages{
     stage("hello"){
       steps{
-        hello()
+        script{
+          hello()
+        }
       }
     }
      stage("develop"){
       steps{
-        develop()
+        script{
+          develop()
+        }
       }
     }
      stage("build"){
       steps{
-        build()
+        script{
+          build()
+        }
       }
     }
      stage("test"){
       steps{
-        test()
+        script{
+          test()
+        }
       }
     }
      stage("deploy"){
       steps{
-        deploy()
+        script{
+          deploy()
+        }
       }
     }
   }
