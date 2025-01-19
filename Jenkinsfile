@@ -30,6 +30,14 @@ pipeline{
         }
       }
     }
+    stage("load config files")
+    {
+      steps{
+        script{
+          loadConfig("config.json")
+        }
+      }
+    }
      stage("deploy"){
       steps{
         script{
