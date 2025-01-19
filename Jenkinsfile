@@ -34,6 +34,7 @@ pipeline{
     {
       steps{
         script{
+          echo "Load the configuration data from file config.json"
           loadConfig("config.json")
         }
       }
